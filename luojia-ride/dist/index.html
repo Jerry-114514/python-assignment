@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="珞珈骑迹大学生出行研究与学习工作台">
+<title>珞珈骑迹 · 校园出行工作台</title>
+<style>
+:root{color-scheme:light;--ink:#182e25;--muted:#52655b;--green:#205840;--light:#e8f3e9;--line:#dce7dd;--paper:#f6f8f3}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.65 system-ui,"Microsoft YaHei",sans-serif}a{color:var(--green)}button,select,input{font:inherit}button,select,input[type=number]{border:1px solid #a9bdad;border-radius:9px;padding:9px 12px;background:white;color:var(--ink)}button{cursor:pointer}button:hover{background:var(--light)}:focus-visible{outline:3px solid #42895e;outline-offset:3px}header{background:white;border-bottom:1px solid var(--line)}.bar,main{max-width:1160px;margin:auto;padding:0 26px}.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:76px;flex-wrap:wrap}.brand{text-decoration:none;display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px}.logo{background:var(--green);color:white;border-radius:10px;padding:7px 10px}.brand small{display:block;font-size:10px;letter-spacing:.13em;color:var(--muted);line-height:1.1}nav{display:flex;gap:5px;flex-wrap:wrap}nav a{color:var(--muted);text-decoration:none;padding:8px 12px;border-radius:8px}nav a[aria-current]{background:var(--light);color:var(--green);font-weight:700}main{padding-top:32px;padding-bottom:28px}.hero{background:#153c2d;color:#fff;display:grid;grid-template-columns:1fr 1fr;min-height:340px;border-radius:22px;overflow:hidden;align-items:center}.hero>div{padding:40px}.hero p{color:#d7e9db;max-width:32em}.hero svg{width:100%;height:100%;min-height:280px}h1,h2,h3,p{margin-top:0}h1{font-size:clamp(32px,5vw,59px);line-height:1.15;margin:14px 0 17px;letter-spacing:-.035em}h2{font-size:26px;margin-bottom:8px}h3{font-size:19px;margin-bottom:6px}.eyebrow{font-size:12px;font-weight:750;letter-spacing:.14em;color:var(--green)}.hero .eyebrow{color:#b4edb5}.button{display:inline-block;text-decoration:none;background:var(--green);color:white;border:0;border-radius:9px;padding:10px 15px;font-weight:700}.button:hover{background:#326f50}.hero .button{background:#d5f38b;color:#193326}.tag{display:inline-block;background:var(--light);color:var(--green);border-radius:999px;padding:3px 10px;font-size:12px;font-weight:700}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{background:white;border:1px solid var(--line);padding:20px;border-radius:15px}.card p:last-child{margin-bottom:0}.muted{color:var(--muted)}.heading{margin:27px 0 12px}.lead{max-width:65ch}.notice{padding:12px 16px;border-radius:10px;background:#fff4d9;color:#61430e;margin:12px 0 18px}.metric{font-size:37px;font-weight:800;line-height:1.2;margin:7px 0}.row{display:flex;gap:14px;flex-wrap:wrap;align-items:end}.row label{display:grid;gap:5px;font-weight:650}.result{margin-top:17px}.chart{width:100%;max-width:680px;height:auto;display:block}.week{display:grid;grid-template-columns:52px 1fr auto;gap:12px;align-items:start;padding:14px 0;border-bottom:1px solid var(--line)}.week strong{display:block}.week p{margin:0}.week label{white-space:nowrap}.section{margin-top:16px}.section>summary{cursor:pointer;font-weight:700}footer{max-width:1160px;margin:auto;padding:18px 26px;color:var(--muted);border-top:1px solid var(--line)}[hidden]{display:none!important}@media(max-width:730px){.hero,.grid{grid-template-columns:1fr}.hero>div{padding:27px}.hero svg{min-height:0}.bar{padding:10px 16px;gap:8px}main{padding:20px 16px}.week{grid-template-columns:40px 1fr}.week label{grid-column:2}nav a{padding:6px 8px}}
+</style>
+</head>
+<body>
+<header><div class="bar"><a class="brand" href="#home"><span class="logo" aria-hidden="true">骑</span><span>珞珈骑迹<small>LUOJIARIDE</small></span></a><nav aria-label="主导航"><a href="#home">总览</a><a href="#survey">线下调研</a><a href="#forecast">短时预测</a><a href="#advice">出行建议</a><a href="#learning">学习路线</a></nav></div></header>
+<main>
+<section id="home" data-page>
+<div class="hero"><div><span class="eyebrow">LUOJIA CAMPUS MOBILITY</span><h1>下一程，<br>从珞珈出发。</h1><p>从校门到教室，再到地铁口。用实地观测理解学生怎么出行，用短时预测帮他们选一条合适的路。</p><a class="button" href="#forecast">体验 15 分钟预测 →</a></div>
+<svg viewBox="0 0 520 330" role="img" aria-label="校园、停车区与地铁接驳的示意路线"><defs><pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#4b765e" stroke-opacity=".4"/></pattern></defs><rect width="520" height="330" fill="#1b4634"/><rect width="520" height="330" fill="url(#grid)"/><path d="M520 18C377 6 374 79 404 103S526 126 520 190Z" fill="#326657"/><path d="M31 233C117 289 179 251 230 211S321 233 362 187 415 117 485 146" fill="none" stroke="#7aa18a" stroke-width="2"/><path d="M6 193C92 201 112 113 170 108S232 160 285 159 334 104 440 87" fill="none" stroke="#d6f38a" stroke-width="4" stroke-dasharray="8 8"/><g fill="#d6f38a" stroke="#153c2d" stroke-width="5"><circle cx="91" cy="173" r="11"/><circle cx="285" cy="159" r="11"/><circle cx="440" cy="87" r="11"/></g><g fill="#ecf7eb" font-size="15" font-family="system-ui"><text x="60" y="208">校园入口</text><text x="253" y="195">教学区域</text><text x="406" y="62">地铁接驳</text></g><text x="32" y="304" fill="#b0cbb8" font-size="12" letter-spacing="3">校园出行示意 · 非导航地图</text></svg></div>
+<h2 class="heading">把调研变成可验证的项目</h2><div class="grid">
+<article class="card"><span class="tag">01 · 实地</span><h3>采集校园数据</h3><p class="muted">问卷了解出行需求，定时盘点记录停车区车辆变化。</p><a href="#survey">查看调研计划 →</a></article>
+<article class="card"><span class="tag">02 · 建模</span><h3>预测下一刻</h3><p class="muted">预测 15 分钟后的车辆数，用完整日期检验与持续性基线的差异。</p><a href="#forecast">查看预测演示 →</a></article>
+<article class="card"><span class="tag">03 · 学习</span><h3>八周同步推进</h3><p class="muted">每周学习一组技能，完成一个可运行的项目产出。</p><a href="#learning">打开学习路线 →</a></article></div>
+</section>
+<section id="survey" data-page hidden>
+<span class="eyebrow">01 / FIELD RESEARCH</span><h1>线下调研</h1><p class="muted lead">先用两天核实观测区域、盘点口径和时段，再安排正式轮班。计划规模会根据试调查调整。</p>
+<div class="grid"><article class="card"><span class="tag">计划</span><p class="metric">3 个区域</p><p>校园出入口、教学区、地铁接驳点。现场确认具体边界。</p></article><article class="card"><span class="tag">计划</span><p class="metric">12–16 天</p><p>每区每天观察 90 分钟，覆盖工作日和周末。</p></article><article class="card"><span class="tag">计划</span><p class="metric">80–120 份</p><p>匿名问卷了解时段、常用方式、找车经历和偏好。</p></article></div>
+<div class="card heading"><h2>现场记录口径</h2><ul><li>每 15 分钟记录时间、区域与可见车辆数。确认可用性后单独记录可用车辆数。</li><li>记录缺测、天气、人工调度和边界变化。零车与缺测分别填写。</li><li>连续计数的窗口可补记借出、归还和调入调出。</li></ul><p class="muted">网站当前展示采样计划。示例数值统一标记为合成数据。</p></div>
+</section>
+<section id="forecast" data-page hidden>
+<span class="eyebrow">02 / SHORT-TERM FORECAST</span><h1>15 分钟预测</h1><p class="notice">合成数据演示 · 页面提供持续性基线。现场数据到齐后再按日期训练与评估模型。</p>
+<div class="card"><form id="predict-form" class="row"><label>停车区域<select id="area"><option value="gate">校园入口</option><option value="classroom">教学区域</option><option value="metro">地铁接驳</option></select></label><label>当前观测车辆数<input id="count" type="number" min="0" max="999" step="1" required></label><button class="button">计算 15 分钟预测</button></form>
+<div class="result" id="prediction" role="status"></div><div id="plot"></div><p class="muted">曲线左侧为合成盘点记录，虚线表示预测。基线假设未来 15 分钟的车辆数等于当前盘点值。</p></div>
+<details class="card section"><summary>正式模型怎样验收</summary><p>按日期先后划分训练、验证和测试，同一天各区域不拆分。以 MAE（辆）比较持续性基线和简单回归，并报告分区域和分时段误差。</p></details>
+</section>
+<section id="advice" data-page hidden>
+<span class="eyebrow">03 / TRIP ADVICE</span><h1>出行建议</h1><p class="notice">路线耗时、车辆数与少车阈值为演示设定。现场核验后可替换。</p>
+<div class="card"><form id="advice-form" class="row"><label>常用路线<select id="route"></select></label><label>天气<select id="weather"><option value="clear">无雨</option><option value="rain">有雨</option></select></label><label>出行偏好<select id="preference"><option value="fast">优先省时</option><option value="walk">优先步行</option></select></label><button class="button">生成建议</button></form></div><div id="recommendations" class="grid result" aria-live="polite"></div>
+</section>
+<section id="learning" data-page hidden>
+<span class="eyebrow">04 / LEARNING TRACK</span><h1>八周学习路线</h1><p class="lead muted">从环境搭建到答辩，每周留下一项可以运行或演示的成果。勾选进度保存在当前浏览器。</p>
+<div class="card"><p id="progress" role="status"></p><progress id="progress-bar" max="8" value="0" aria-label="学习周完成进度"></progress><div id="weeks"></div></div>
+<details class="card section"><summary>公共学习与角色专精</summary><p>全员练习 Python、CSV 清洗与基础图表。数据岗深入质量检查，建模岗负责基线和时序评估，算法岗负责路线与规则，应用岗负责 Streamlit 与图表，文档和集成岗负责复现与答辩。</p></details>
+</section>
+</main>
+<footer>珞珈骑迹 · 大学生出行课程项目 <span aria-hidden="true"> / </span> 网站原型 v0.1</footer>
+<script>
+// 内容配置。新增区域、路线和周任务集中修改这里。
+const areas = {
+  gate: { name: '校园入口', samples: [17, 14, 11, 9] },
+  classroom: { name: '教学区域', samples: [5, 8, 9, 13] },
+  metro: { name: '地铁接驳', samples: [10, 7, 4, 2] }
+};
+const routes = [
+  { name: '校园入口 → 教学区域', area: 'gate', walk: 16, ride: 8 },
+  { name: '教学区域 → 校园入口', area: 'classroom', walk: 16, ride: 8 },
+  { name: '地铁接驳点 → 校园入口', area: 'metro', walk: 20, ride: 10 }
+];
+const weeks = [
+  ['环境与 Python 基础', '建虚拟环境，读入试调查记录并画第一张图。'],
+  ['Python 与 pandas 入门', '清洗盘点表，区分缺测与零车，启动正式轮班。'],
+  ['pandas 聚合与可视化', '按区域和时段绘图，检查覆盖范围。'],
+  ['统计与机器学习', '跑通持续性和历史均值基线，读懂 MAE。'],
+  ['时序特征与防泄漏', '按日期回测，在同一测试口径下比较简单模型。'],
+  ['算法与 Streamlit', '完成路线规则与建议页面，练习排序或最短路。'],
+  ['应用集成与表达', '联调调研、预测和建议，整理图表与报告。'],
+  ['复习与答辩', '复现结果，检查提交包并完成三分钟演示。']
+];
+const byId = id => document.getElementById(id);
+function showPage() {
+  const requested = location.hash.slice(1);
+  const page = document.querySelector('[data-page][id="' + (['home','survey','forecast','advice','learning'].includes(requested) ? requested : 'home') + '"]');
+  for (const section of document.querySelectorAll('[data-page]')) section.hidden = section !== page;
+  for (const link of document.querySelectorAll('nav a')) {
+    if (link.hash === '#' + page.id) link.setAttribute('aria-current','page');
+    else link.removeAttribute('aria-current');
+  }
+  window.scrollTo(0, 0);
+}
+window.addEventListener('hashchange', showPage);
+showPage();
+
+const observations = {};
+function plot(samples) {
+  const values = [...samples, samples.at(-1)];
+  const max = Math.max(1, ...values);
+  const points = values.map((n, i) => [42 + i * 116, 122 - n / max * 86]);
+  const dots = points.map(([x,y],i) => '<circle cx="'+x+'" cy="'+y+'" r="4" fill="#205840"/><text x="'+x+'" y="'+(y-9)+'" text-anchor="middle">'+values[i]+'</text>').join('');
+  return '<svg class="chart" viewBox="0 0 550 155" role="img" aria-label="四次合成观测和下一次基线预测：'+values.join('、')+' 辆"><path d="M36 124H520" stroke="#c7d7cb"/><polyline points="'+points.slice(0,4).join(' ')+'" fill="none" stroke="#205840" stroke-width="3"/><polyline points="'+points.slice(3).join(' ')+'" fill="none" stroke="#205840" stroke-width="3" stroke-dasharray="6 4"/>'+dots+'<text x="390" y="146" text-anchor="middle">当前</text><text x="506" y="146" text-anchor="middle">+15 分钟</text></svg>';
+}
+function predict() {
+  const area = byId('area').value;
+  const count = byId('count').valueAsNumber;
+  if (!Number.isInteger(count) || count < 0 || count > 999) return;
+  observations[area] = count;
+  byId('prediction').textContent = areas[area].name + ' · 15 分钟后基线预测 ' + count + ' 辆（演示）';
+  byId('plot').innerHTML = plot([...areas[area].samples.slice(0,3), count]);
+}
+function resetCount() {
+  const area = byId('area').value;
+  byId('count').value = observations[area] ?? areas[area].samples.at(-1);
+  predict();
+}
+byId('area').addEventListener('change', resetCount);
+byId('predict-form').addEventListener('submit', e => { e.preventDefault(); predict(); });
+resetCount();
+
+routes.forEach((route, i) => byId('route').add(new Option(route.name, i)));
+function recommend() {
+  const route = routes[Number(byId('route').value)];
+  const count = observations[route.area] ?? areas[route.area].samples.at(-1);
+  const rain = byId('weather').value === 'rain';
+  const walkFirst = rain || count < 3 || byId('preference').value === 'walk' || route.walk <= route.ride;
+  const walk = ['步行', route.walk, '无需找车，可直接出发。'];
+  const ride = ['共享单车', route.ride, '起点预计 ' + count + ' 辆（演示）' + (count < 3 ? '，低于演示少车阈值。' : '。') + (rain ? ' 当前设置为有雨。' : '')];
+  byId('recommendations').innerHTML = (walkFirst ? [walk, ride] : [ride, walk]).map(([name, minutes, reason], i) =>
+    '<article class="card"><span class="tag">'+(i === 0 ? '建议优先' : '备选')+'</span><h3>'+name+'</h3><p class="metric">'+minutes+' 分钟</p><p>'+reason+'</p></article>').join('');
+}
+byId('advice-form').addEventListener('submit', e => { e.preventDefault(); recommend(); });
+recommend();
+
+const progressKey = 'luojiaride-learning-v1';
+let checked = [];
+try {
+  const saved = JSON.parse(localStorage.getItem(progressKey) || '[]');
+  if (Array.isArray(saved)) checked = saved;
+} catch {}
+byId('weeks').innerHTML = weeks.map(([title, task], i) =>
+  '<div class="week"><span class="eyebrow">W'+(i+1)+'</span><div><strong>'+title+'</strong><p class="muted">'+task+'</p></div><label><input type="checkbox" data-week="'+i+'"'+(checked.includes(i) ? ' checked' : '')+'> 完成第 '+(i+1)+' 周</label></div>').join('');
+function updateProgress() {
+  checked = [...document.querySelectorAll('[data-week]:checked')].map(input => Number(input.dataset.week));
+  byId('progress').textContent = '已完成 ' + checked.length + ' / ' + weeks.length + ' 周';
+  byId('progress-bar').value = checked.length;
+}
+byId('weeks').addEventListener('change', () => {
+  updateProgress();
+  try { localStorage.setItem(progressKey, JSON.stringify(checked)); } catch {}
+});
+updateProgress();
+</script>
+</body>
+</html>
