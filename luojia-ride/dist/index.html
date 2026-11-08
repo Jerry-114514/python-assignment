@@ -8,10 +8,11 @@
 <style>
 :root{color-scheme:light;--ink:#182e25;--muted:#52655b;--green:#205840;--light:#e8f3e9;--line:#dce7dd;--paper:#f6f8f3}
 *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.65 system-ui,"Microsoft YaHei",sans-serif}a{color:var(--green)}button,select,input{font:inherit}button,select,input[type=number]{border:1px solid #a9bdad;border-radius:9px;padding:9px 12px;background:white;color:var(--ink)}button{cursor:pointer}button:hover{background:var(--light)}:focus-visible{outline:3px solid #42895e;outline-offset:3px}header{background:white;border-bottom:1px solid var(--line)}.bar,main{max-width:1160px;margin:auto;padding:0 26px}.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:76px;flex-wrap:wrap}.brand{text-decoration:none;display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px}.logo{background:var(--green);color:white;border-radius:10px;padding:7px 10px}.brand small{display:block;font-size:10px;letter-spacing:.13em;color:var(--muted);line-height:1.1}nav{display:flex;gap:5px;flex-wrap:wrap}nav a{color:var(--muted);text-decoration:none;padding:8px 12px;border-radius:8px}nav a[aria-current]{background:var(--light);color:var(--green);font-weight:700}main{padding-top:32px;padding-bottom:28px}.hero{background:#153c2d;color:#fff;display:grid;grid-template-columns:1fr 1fr;min-height:340px;border-radius:22px;overflow:hidden;align-items:center}.hero>div{padding:40px}.hero p{color:#d7e9db;max-width:32em}.hero svg{width:100%;height:100%;min-height:280px}h1,h2,h3,p{margin-top:0}h1{font-size:clamp(32px,5vw,59px);line-height:1.15;margin:14px 0 17px;letter-spacing:-.035em}h2{font-size:26px;margin-bottom:8px}h3{font-size:19px;margin-bottom:6px}.eyebrow{font-size:12px;font-weight:750;letter-spacing:.14em;color:var(--green)}.hero .eyebrow{color:#b4edb5}.button{display:inline-block;text-decoration:none;background:var(--green);color:white;border:0;border-radius:9px;padding:10px 15px;font-weight:700}.button:hover{background:#326f50}.hero .button{background:#d5f38b;color:#193326}.tag{display:inline-block;background:var(--light);color:var(--green);border-radius:999px;padding:3px 10px;font-size:12px;font-weight:700}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{background:white;border:1px solid var(--line);padding:20px;border-radius:15px}.card p:last-child{margin-bottom:0}.muted{color:var(--muted)}.heading{margin:27px 0 12px}.lead{max-width:65ch}.notice{padding:12px 16px;border-radius:10px;background:#fff4d9;color:#61430e;margin:12px 0 18px}.metric{font-size:37px;font-weight:800;line-height:1.2;margin:7px 0}.row{display:flex;gap:14px;flex-wrap:wrap;align-items:end}.row label{display:grid;gap:5px;font-weight:650}.result{margin-top:17px}.chart{width:100%;max-width:680px;height:auto;display:block}.week{display:grid;grid-template-columns:52px 1fr auto;gap:12px;align-items:start;padding:14px 0;border-bottom:1px solid var(--line)}.week strong{display:block}.week p{margin:0}.week label{white-space:nowrap}.section{margin-top:16px}.section>summary{cursor:pointer;font-weight:700}footer{max-width:1160px;margin:auto;padding:18px 26px;color:var(--muted);border-top:1px solid var(--line)}[hidden]{display:none!important}@media(max-width:730px){.hero,.grid{grid-template-columns:1fr}.hero>div{padding:27px}.hero svg{min-height:0}.bar{padding:10px 16px;gap:8px}main{padding:20px 16px}.week{grid-template-columns:40px 1fr}.week label{grid-column:2}nav a{padding:6px 8px}}
+.account-menu{position:relative;margin-left:auto}.account-menu summary{list-style:none;cursor:pointer;background:#205840;color:#fff;border-radius:10px;padding:9px 14px;font-weight:750;white-space:nowrap}.account-menu summary::-webkit-details-marker{display:none}.account-menu summary:hover{background:#326f50}.account-panel{position:absolute;z-index:10;right:0;top:calc(100% + 8px);width:min(260px,calc(100vw - 32px));padding:16px;background:#fff;border:1px solid var(--line);border-radius:13px;box-shadow:0 12px 28px #182e2520}.account-panel p{margin-bottom:8px}.account-actions{display:grid;gap:8px}.account-actions a{text-align:center}.account-actions>a:not(.button){padding:5px}.account-caret{margin-left:5px}@media(max-width:730px){.bar nav{order:3;width:100%}}
 </style>
 </head>
 <body>
-<header><div class="bar"><a class="brand" href="#home"><span class="logo" aria-hidden="true">骑</span><span>珞珈骑迹<small>LUOJIARIDE</small></span></a><nav aria-label="主导航"><a href="#home">总览</a><a href="#survey">线下调研</a><a href="#forecast">短时预测</a><a href="#advice">出行建议</a><a href="#learning">学习路线</a></nav></div></header>
+<header><div class="bar"><a class="brand" href="#home"><span class="logo" aria-hidden="true">骑</span><span>珞珈骑迹<small>LUOJIARIDE</small></span></a><nav aria-label="主导航"><a href="#home">总览</a><a href="#survey">线下调研</a><a href="#forecast">短时预测</a><a href="#advice">出行建议</a><a href="#learning">学习路线</a></nav><details class="account-menu"><summary>账号与登录<span class="account-caret" aria-hidden="true">▾</span></summary><div class="account-panel"><h3>珞珈骑迹账号</h3><div class="account-actions"><!-- account-actions-start --><p class="muted">请启动本地服务后使用邮箱登录。</p><!-- account-actions-end --></div></div></details></div></header>
 <main>
 <section id="home" data-page>
 <div class="hero"><div><span class="eyebrow">LUOJIA CAMPUS MOBILITY</span><h1>下一程，<br>从珞珈出发。</h1><p>从校门到教室，再到地铁口。用实地观测理解学生怎么出行，用短时预测帮他们选一条合适的路。</p><a class="button" href="#forecast">体验 15 分钟预测 →</a></div>
@@ -42,7 +43,7 @@
 <details class="card section"><summary>公共学习与角色专精</summary><p>全员练习 Python、CSV 清洗与基础图表。数据岗深入质量检查，建模岗负责基线和时序评估，算法岗负责路线与规则，应用岗负责 Streamlit 与图表，文档和集成岗负责复现与答辩。</p></details>
 </section>
 </main>
-<footer>珞珈骑迹 · 大学生出行课程项目 <span aria-hidden="true"> / </span> <!-- hosted-account --></footer>
+<footer>珞珈骑迹 · 大学生出行课程项目</footer>
 <script>
 // 内容配置。新增区域、路线和周任务集中修改这里。
 const areas = {
@@ -136,6 +137,17 @@ byId('weeks').addEventListener('change', () => {
   try { localStorage.setItem(progressKey, JSON.stringify(checked)); } catch {}
 });
 updateProgress();
+
+const accountMenu = document.querySelector('.account-menu');
+document.addEventListener('click', event => {
+  if (accountMenu.open && !accountMenu.contains(event.target)) accountMenu.open = false;
+});
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && accountMenu.open) {
+    accountMenu.open = false;
+    accountMenu.querySelector('summary').focus();
+  }
+});
 </script>
 </body>
 </html>
