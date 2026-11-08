@@ -182,7 +182,8 @@ export default {
         return respond('此请求方式不受支持。', 405, { Allow: 'GET, HEAD, POST' });
       }
       if (path === '/' || path === '/index.html') {
-        return render(home.replace('<!-- hosted-account -->', '<a href="/account">账号与邮箱登录</a>'));
+        return render(home.replace(/<!-- account-actions-start -->.*?<!-- account-actions-end -->/s,
+          '<a class="button" href="/login">邮箱登录</a><a href="/account">我的账号</a>'));
       }
       if (path === '/login' || path === '/login/code') {
         if (!config) return render(page('邮箱登录尚未启用', '<p>请稍后再试。</p>'), 503);
