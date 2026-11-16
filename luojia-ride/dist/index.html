@@ -9,17 +9,18 @@
 :root{color-scheme:light;--ink:#182e25;--muted:#52655b;--green:#205840;--light:#e8f3e9;--line:#dce7dd;--paper:#f6f8f3}
 *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.65 system-ui,"Microsoft YaHei",sans-serif}a{color:var(--green)}button,select,input{font:inherit}button,select,input[type=number]{border:1px solid #a9bdad;border-radius:9px;padding:9px 12px;background:white;color:var(--ink)}button{cursor:pointer}button:hover{background:var(--light)}:focus-visible{outline:3px solid #42895e;outline-offset:3px}header{background:white;border-bottom:1px solid var(--line)}.bar,main{max-width:1160px;margin:auto;padding:0 26px}.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:76px;flex-wrap:wrap}.brand{text-decoration:none;display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px}.logo{background:var(--green);color:white;border-radius:10px;padding:7px 10px}.brand small{display:block;font-size:10px;letter-spacing:.13em;color:var(--muted);line-height:1.1}nav{display:flex;gap:5px;flex-wrap:wrap}nav a{color:var(--muted);text-decoration:none;padding:8px 12px;border-radius:8px}nav a[aria-current]{background:var(--light);color:var(--green);font-weight:700}main{padding-top:32px;padding-bottom:28px}.hero{background:#153c2d;color:#fff;display:grid;grid-template-columns:1fr 1fr;min-height:340px;border-radius:22px;overflow:hidden;align-items:center}.hero>div{padding:40px}.hero p{color:#d7e9db;max-width:32em}.hero svg{width:100%;height:100%;min-height:280px}h1,h2,h3,p{margin-top:0}h1{font-size:clamp(32px,5vw,59px);line-height:1.15;margin:14px 0 17px;letter-spacing:-.035em}h2{font-size:26px;margin-bottom:8px}h3{font-size:19px;margin-bottom:6px}.eyebrow{font-size:12px;font-weight:750;letter-spacing:.14em;color:var(--green)}.hero .eyebrow{color:#b4edb5}.button{display:inline-block;text-decoration:none;background:var(--green);color:white;border:0;border-radius:9px;padding:10px 15px;font-weight:700}.button:hover{background:#326f50}.hero .button{background:#d5f38b;color:#193326}.tag{display:inline-block;background:var(--light);color:var(--green);border-radius:999px;padding:3px 10px;font-size:12px;font-weight:700}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{background:white;border:1px solid var(--line);padding:20px;border-radius:15px}.card p:last-child{margin-bottom:0}.muted{color:var(--muted)}.heading{margin:27px 0 12px}.lead{max-width:65ch}.notice{padding:12px 16px;border-radius:10px;background:#fff4d9;color:#61430e;margin:12px 0 18px}.metric{font-size:37px;font-weight:800;line-height:1.2;margin:7px 0}.row{display:flex;gap:14px;flex-wrap:wrap;align-items:end}.row label{display:grid;gap:5px;font-weight:650}.result{margin-top:17px}.chart{width:100%;max-width:680px;height:auto;display:block}.week{display:grid;grid-template-columns:52px 1fr auto;gap:12px;align-items:start;padding:14px 0;border-bottom:1px solid var(--line)}.week strong{display:block}.week p{margin:0}.week label{white-space:nowrap}.section{margin-top:16px}.section>summary{cursor:pointer;font-weight:700}footer{max-width:1160px;margin:auto;padding:18px 26px;color:var(--muted);border-top:1px solid var(--line)}[hidden]{display:none!important}@media(max-width:730px){.hero,.grid{grid-template-columns:1fr}.hero>div{padding:27px}.hero svg{min-height:0}.bar{padding:10px 16px;gap:8px}main{padding:20px 16px}.week{grid-template-columns:40px 1fr}.week label{grid-column:2}nav a{padding:6px 8px}}
 .account-menu{position:relative;margin-left:auto}.account-menu summary{list-style:none;cursor:pointer;background:#205840;color:#fff;border-radius:10px;padding:9px 14px;font-weight:750;white-space:nowrap}.account-menu summary::-webkit-details-marker{display:none}.account-menu summary:hover{background:#326f50}.account-panel{position:absolute;z-index:10;right:0;top:calc(100% + 8px);width:min(260px,calc(100vw - 32px));padding:16px;background:#fff;border:1px solid var(--line);border-radius:13px;box-shadow:0 12px 28px #182e2520}.account-panel p{margin-bottom:8px}.account-actions{display:grid;gap:8px}.account-actions a{text-align:center}.account-actions>a:not(.button){padding:5px}.account-caret{margin-left:5px}@media(max-width:730px){.bar nav{order:3;width:100%}}
+.daily-form{display:grid;gap:12px}.daily-form textarea{width:100%;padding:10px;border:1px solid #a9bdad;border-radius:9px;font:inherit;color:var(--ink)}.daily-form label{display:block;font-weight:650}.daily-table{width:100%;border-collapse:collapse;text-align:left}.daily-table th,.daily-table td{padding:8px 5px;border-bottom:1px solid var(--line)}.daily-form button{justify-self:start}
 </style>
 </head>
 <body>
-<header><div class="bar"><a class="brand" href="#home"><span class="logo" aria-hidden="true">骑</span><span>珞珈骑迹<small>LUOJIARIDE</small></span></a><nav aria-label="主导航"><a href="#home">总览</a><a href="#survey">线下调研</a><a href="#forecast">短时预测</a><a href="#advice">出行建议</a><a href="#learning">学习路线</a></nav><details class="account-menu"><summary>账号与登录<span class="account-caret" aria-hidden="true">▾</span></summary><div class="account-panel"><h3>珞珈骑迹账号</h3><div class="account-actions"><!-- account-actions-start --><p class="muted">请启动本地服务后使用邮箱登录。</p><!-- account-actions-end --></div></div></details></div></header>
+<header><div class="bar"><a class="brand" href="#home"><span class="logo" aria-hidden="true">骑</span><span>珞珈骑迹<small>LUOJIARIDE</small></span></a><nav aria-label="主导航"><a href="#home">总览</a><a href="#survey">线下调研</a><a href="#forecast">骑行预测</a><a href="#advice">出行建议</a><a href="#learning">学习路线</a></nav><details class="account-menu"><summary>账号与登录<span class="account-caret" aria-hidden="true">▾</span></summary><div class="account-panel"><h3>珞珈骑迹账号</h3><div class="account-actions"><!-- account-actions-start --><p class="muted">请启动本地服务后使用邮箱登录。</p><!-- account-actions-end --></div></div></details></div></header>
 <main>
 <section id="home" data-page>
-<div class="hero"><div><span class="eyebrow">LUOJIA CAMPUS MOBILITY</span><h1>下一程，<br>从珞珈出发。</h1><p>从校门到教室，再到地铁口。用实地观测理解学生怎么出行，用短时预测帮他们选一条合适的路。</p><a class="button" href="#forecast">体验 15 分钟预测 →</a></div>
+<div class="hero"><div><span class="eyebrow">LUOJIA CAMPUS MOBILITY</span><h1>下一程，<br>从珞珈出发。</h1><p>从校门到教室，再到地铁口。用实地观测理解学生怎么出行，用短时预测帮他们选一条合适的路。</p><a class="button" href="#forecast">预测未来 3 天骑行量 →</a></div>
 <svg viewBox="0 0 520 330" role="img" aria-label="校园、停车区与地铁接驳的示意路线"><defs><pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#4b765e" stroke-opacity=".4"/></pattern></defs><rect width="520" height="330" fill="#1b4634"/><rect width="520" height="330" fill="url(#grid)"/><path d="M520 18C377 6 374 79 404 103S526 126 520 190Z" fill="#326657"/><path d="M31 233C117 289 179 251 230 211S321 233 362 187 415 117 485 146" fill="none" stroke="#7aa18a" stroke-width="2"/><path d="M6 193C92 201 112 113 170 108S232 160 285 159 334 104 440 87" fill="none" stroke="#d6f38a" stroke-width="4" stroke-dasharray="8 8"/><g fill="#d6f38a" stroke="#153c2d" stroke-width="5"><circle cx="91" cy="173" r="11"/><circle cx="285" cy="159" r="11"/><circle cx="440" cy="87" r="11"/></g><g fill="#ecf7eb" font-size="15" font-family="system-ui"><text x="60" y="208">校园入口</text><text x="253" y="195">教学区域</text><text x="406" y="62">地铁接驳</text></g><text x="32" y="304" fill="#b0cbb8" font-size="12" letter-spacing="3">校园出行示意 · 非导航地图</text></svg></div>
 <h2 class="heading">把调研变成可验证的项目</h2><div class="grid">
 <article class="card"><span class="tag">01 · 实地</span><h3>采集校园数据</h3><p class="muted">问卷了解出行需求，定时盘点记录停车区车辆变化。</p><a href="#survey">查看调研计划 →</a></article>
-<article class="card"><span class="tag">02 · 建模</span><h3>预测下一刻</h3><p class="muted">预测 15 分钟后的车辆数，用完整日期检验与持续性基线的差异。</p><a href="#forecast">查看预测演示 →</a></article>
+<article class="card"><span class="tag">02 · 建模</span><h3>预测下一刻</h3><p class="muted">用最近 7–30 天的骑行人次拟合未来 3 天，并对照均值基线。</p><a href="#forecast">查看预测演示 →</a></article>
 <article class="card"><span class="tag">03 · 学习</span><h3>八周同步推进</h3><p class="muted">每周学习一组技能，完成一个可运行的项目产出。</p><a href="#learning">打开学习路线 →</a></article></div>
 </section>
 <section id="survey" data-page hidden>
@@ -28,10 +29,29 @@
 <div class="card heading"><h2>现场记录口径</h2><ul><li>每 15 分钟记录时间、区域与可见车辆数。确认可用性后单独记录可用车辆数。</li><li>记录缺测、天气、人工调度和边界变化。零车与缺测分别填写。</li><li>连续计数的窗口可补记借出、归还和调入调出。</li></ul><p class="muted">网站当前展示采样计划。示例数值统一标记为合成数据。</p></div>
 </section>
 <section id="forecast" data-page hidden>
-<span class="eyebrow">02 / SHORT-TERM FORECAST</span><h1>15 分钟预测</h1><p class="notice">合成数据演示 · 页面提供持续性基线。现场数据到齐后再按日期训练与评估模型。</p>
+<span class="eyebrow">骑行流量</span><h1>未来 3 天骑行预测</h1>
+<p class="muted lead">输入同一区域的每日骑行人次，按从最早到最近的顺序排列。请连续记录，零人次填 0，缺测日先补录。</p>
+<div class="card">
+<form id="daily-form" class="daily-form">
+<div class="row"><label>历史窗口<select id="daily-window"><option>7</option><option>14</option><option>21</option><option>30</option></select> 天</label><button type="button" id="daily-example">填入演示数据</button></div>
+<label for="daily-counts">每日骑行人次</label>
+<textarea id="daily-counts" rows="3" maxlength="400" required placeholder="例如：120, 132, 127, 138, 145, 149, 153" aria-describedby="daily-hint"></textarea>
+<small id="daily-hint" class="muted">支持逗号、空格或换行分隔。每项填写一个非负整数。</small>
+<button class="button">拟合并预测</button>
+</form>
+<p id="daily-status" class="result" role="status"></p>
+<div id="daily-result" hidden>
+<table class="daily-table"><thead><tr><th scope="col">未来日期</th><th scope="col">DNN 预测</th><th scope="col">最近 3 日均值</th></tr></thead><tbody id="daily-rows"></tbody></table>
+</div>
+<details class="section"><summary>模型与回测方法</summary><p>模型根据前 1 天人次和前 3 天均值拟合次日人次。沿用样例的特征标准化、全连接 ReLU、MSE 与 Adam，采用两个小型隐藏层。按时间留出最后 3 天，验证时逐日递推。随后用所有历史记录重新训练，预测未来 3 天。历史仅有 7 天时，回测训练使用最早 4 天，结果波动可能较大。</p></details>
+</div>
+<details class="section"><summary>查看原有 15 分钟车辆数演示</summary>
+<div>
+<p class="notice">合成数据演示 · 页面提供持续性基线。</p>
 <div class="card"><form id="predict-form" class="row"><label>停车区域<select id="area"><option value="gate">校园入口</option><option value="classroom">教学区域</option><option value="metro">地铁接驳</option></select></label><label>当前观测车辆数<input id="count" type="number" min="0" max="999" step="1" required></label><button class="button">计算 15 分钟预测</button></form>
 <div class="result" id="prediction" role="status"></div><div id="plot"></div><p class="muted">曲线左侧为合成盘点记录，虚线表示预测。基线假设未来 15 分钟的车辆数等于当前盘点值。</p></div>
 <details class="card section"><summary>正式模型怎样验收</summary><p>按日期先后划分训练、验证和测试，同一天各区域不拆分。以 MAE（辆）比较持续性基线和简单回归，并报告分区域和分时段误差。</p></details>
+</div></details>
 </section>
 <section id="advice" data-page hidden>
 <span class="eyebrow">03 / TRIP ADVICE</span><h1>出行建议</h1><p class="notice">路线耗时、车辆数与少车阈值为演示设定。现场核验后可替换。</p>
@@ -147,6 +167,124 @@ document.addEventListener('keydown', event => {
     accountMenu.open = false;
     accountMenu.querySelector('summary').focus();
   }
+});
+// Each training row predicts the next count using only earlier observations.
+const mean = values => values.reduce((sum, value) => sum + value, 0) / values.length;
+const dailyFeatures = history => [history.at(-1), mean(history.slice(-3))];
+
+function fitDailyModel(history) {
+  const rows = history.slice(3).map((target, i) => ({x: dailyFeatures(history.slice(0, i + 3)), target}));
+  const columns = [rows.map(row => row.x[0]), rows.map(row => row.x[1]), rows.map(row => row.target)];
+  const centers = columns.map(mean);
+  const scales = columns.map((column, j) => Math.max(1, Math.sqrt(mean(column.map(v => (v - centers[j]) ** 2)))));
+  const normalize = x => x.map((v, j) => (v - centers[j]) / scales[j]);
+  const samples = rows.map(row => ({x: normalize(row.x), y: (row.target - centers[2]) / scales[2]}));
+  let seed = 42;
+  const random = () => ((seed = (Math.imul(1664525, seed) + 1013904223) >>> 0) / 2 ** 32);
+  const layers = [2, 4, 2, 1].slice(1).map((size, layer) => {
+    const inputs = [2, 4, 2][layer];
+    return Array.from({length: size}, () => ({
+      weights: Array.from({length: inputs + 1}, (_, i) => i === inputs ? 0 : (random() - 0.5) * Math.sqrt(8 / inputs)),
+      first: Array(inputs + 1).fill(0),
+      second: Array(inputs + 1).fill(0)
+    }));
+  });
+  function forward(x) {
+    const activations = [x];
+    layers.forEach((layer, l) => {
+      const previous = activations[l];
+      activations.push(layer.map(({weights}) => {
+        const value = previous.reduce((sum, input, i) => sum + input * weights[i], weights.at(-1));
+        return l === layers.length - 1 ? value : Math.max(0, value);
+      }));
+    });
+    return activations;
+  }
+  for (let epoch = 1; epoch <= 160; epoch++) {
+    const gradients = layers.map(layer => layer.map(unit => unit.weights.map(() => 0)));
+    for (const {x, y} of samples) {
+      const activations = forward(x);
+      let delta = [2 * (activations.at(-1)[0] - y) / samples.length];
+      for (let l = layers.length - 1; l >= 0; l--) {
+        const previous = activations[l];
+        const back = previous.map(() => 0);
+        layers[l].forEach((unit, j) => {
+          previous.forEach((input, i) => {
+            gradients[l][j][i] += delta[j] * input;
+            back[i] += delta[j] * unit.weights[i];
+          });
+          gradients[l][j][previous.length] += delta[j];
+        });
+        delta = back.map((value, i) => previous[i] > 0 ? value : 0);
+      }
+    }
+    layers.forEach((layer, l) => layer.forEach((unit, j) => unit.weights.forEach((weight, i) => {
+      // Weight decay limits overfitting; the last parameter is the bias.
+      const grad = gradients[l][j][i] + (i < unit.weights.length - 1 ? 0.02 * weight : 0);
+      unit.first[i] = 0.9 * unit.first[i] + 0.1 * grad;
+      unit.second[i] = 0.999 * unit.second[i] + 0.001 * grad ** 2;
+      const correctedMean = unit.first[i] / (1 - 0.9 ** epoch);
+      const correctedVariance = unit.second[i] / (1 - 0.999 ** epoch);
+      unit.weights[i] -= 0.01 * correctedMean / (Math.sqrt(correctedVariance) + 1e-8);
+    })));
+  }
+  return observed => {
+    const raw = forward(normalize(dailyFeatures(observed))).at(-1)[0] * scales[2] + centers[2];
+    return Math.max(0, Math.round(raw));
+  };
+}
+
+function predictThree(history, model) {
+  const observations = [...history];
+  for (let day = 0; day < 3; day++) observations.push(model(observations));
+  return observations.slice(-3);
+}
+
+function dailyForecast(history) {
+  const train = history.slice(0, -3);
+  const actual = history.slice(-3);
+  const baseline = values => Math.round(mean(values.slice(-3)));
+  const mae = predictions => mean(predictions.map((value, i) => Math.abs(value - actual[i])));
+  return {
+    dnn: predictThree(history, fitDailyModel(history)),
+    baseline: Array(3).fill(baseline(history)),
+    dnnMae: mae(predictThree(train, fitDailyModel(train))),
+    baselineMae: mae(Array(3).fill(baseline(train)))
+  };
+}
+
+function resetDailyResult() {
+  byId('daily-result').hidden = true;
+  byId('daily-status').textContent = '';
+}
+byId('daily-counts').addEventListener('input', resetDailyResult);
+byId('daily-window').addEventListener('change', resetDailyResult);
+byId('daily-example').addEventListener('click', () => {
+  const count = Number(byId('daily-window').value);
+  byId('daily-counts').value = Array.from({length: count}, (_, i) => 116 + 2 * i + [0, 7, 2, 9, 14, -12, -15][i % 7]).join(', ');
+  resetDailyResult();
+  byId('daily-status').textContent = '已填入合成演示数据。';
+});
+byId('daily-form').addEventListener('submit', event => {
+  event.preventDefault();
+  resetDailyResult();
+  const count = Number(byId('daily-window').value);
+  const tokens = byId('daily-counts').value.trim().replace(/，/g, ',').split(',').flatMap(piece => piece.trim().split(/\s+/));
+  if (tokens.length !== count || tokens.some(token => !/^\d{1,9}$/.test(token))) {
+    byId('daily-status').textContent = '请输入恰好 ' + count + ' 个非负整数，每个数最多 9 位。请检查是否有空项。';
+    return;
+  }
+  const result = dailyForecast(tokens.map(Number));
+  byId('daily-rows').replaceChildren(...result.dnn.map((value, i) => {
+    const row = document.createElement('tr');
+    for (const content of ['第 ' + (i + 1) + ' 天', value + ' 人次', result.baseline[i] + ' 人次']) {
+      row.insertCell().textContent = content;
+    }
+    return row;
+  }));
+  byId('daily-status').textContent = '最近 3 天回测平均绝对误差：DNN ' +
+    result.dnnMae.toFixed(1) + ' 人次，均值基线 ' + result.baselineMae.toFixed(1) + ' 人次。';
+  byId('daily-result').hidden = false;
 });
 </script>
 </body>
